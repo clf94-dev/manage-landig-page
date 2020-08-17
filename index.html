@@ -12,6 +12,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://kit.fontawesome.com/fcb1ee29b4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -34,6 +36,7 @@
 
 <body>
     <section id="navbar">
+        <div class="top-bg"></div>
         <nav>
             <div class="logo">
                 <img src="images/logo.svg" alt="">
@@ -56,7 +59,7 @@
         </nav>
     </section>
     <section id="top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
                     <h1 class="text-font title-weight-bold">Bring everyone together to build better products.</h1>
@@ -71,7 +74,7 @@
         </div>
     </section>
     <section id="features">
-        <div class="container contmiddle">
+        <div class="container-fluid contmiddle">
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-features">
                     <h3 class="text-font title-weight-bold title-row">What’s different about Manage?</h3>
@@ -79,19 +82,19 @@
                 </div>
                 <div class="col-md-6 col-sm-12 col-features">
                     <div class="row title-row">
-                        <button class="btn" type="button" name="button"> 01 </button>
+                        <div class="orange-cont"> 01 </div>
                         <h4 class="text-font subtitle-weight"> Track company-wide progress</h4>
 
                     </div>
                     <h5>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</h5>
                     <div class="row title-row">
-                        <button class="btn" type="button" name="button"> 02 </button>
+                        <div class="orange-cont"> 02 </div>
                         <h4 class="text-font subtitle-weight"> Advanced built-in reports</h4>
 
                     </div>
                     <h5 class="text-font">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</h5>
                     <div class="row title-row">
-                        <button class="btn" type="button" name="button"> 03 </button>
+                        <div class="orange-cont"> 03 </div>
                         <h4 class="text-font subtitle-weight">Everything you need in one place</h4>
 
                     </div>
@@ -101,7 +104,8 @@
         </div>
     </section>
     <section id="testimonials">
-        <div class="container cont-opinions">
+        <div class="middle-bg"></div>
+        <div class="container-fluid cont-opinions">
 
 
             <h2 class="text-font title-weight-bold title-opinions"> What they’ve said</h2>
@@ -150,7 +154,7 @@
         </div>
     </section>
     <section id="cta">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h2 class="text-font title-weight-bold calltoaction-color">Simplify how your team works today.</h2>
@@ -164,34 +168,38 @@
         </div>
     </section>
     <section id="footer">
-        <div class="container contsocial">
+        <div class="container-fluid contsocial">
             <div class="row">
                 <div class="col-lg-3 col-sm-12">
                     <img src="images/logo.svg" alt="logo">
                 </div>
                 <div class="col-lg-3 col-sm-12">
-                    <h5 class="text-font calltoaction-color">Home</h5>
-                    <h5 class="text-font calltoaction-color">Pricing</h5>
-                    <h5 class="text-font calltoaction-color">Products</h5>
-                    <h5 class="text-font calltoaction-color">About Us</h5>
+                    <div class="row">
+                        <div class=" col-sm-6">
+                            <h5 class="text-font calltoaction-color">Home</h5>
+                            <h5 class="text-font calltoaction-color">Pricing</h5>
+                            <h5 class="text-font calltoaction-color">Products</h5>
+                            <h5 class="text-font calltoaction-color">About Us</h5>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 class="text-font calltoaction-color">Careers</h5>
+                            <h5 class="text-font calltoaction-color">Community</h5>
+                            <h5 class="text-font calltoaction-color">Privacy Policy</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
-                    <h5 class="text-font calltoaction-color">Careers</h5>
-                    <h5 class="text-font calltoaction-color">Community</h5>
-                    <h5 class="text-font calltoaction-color">Privacy Policy</h5>
-                </div>
+
                 <div class="col-lg-3 col-sm-12">
                     <div class="row search-row">
                         <input class="input-footer" type="text" name="search" value="" placeholder="Search for...">
                         <button class="btn btn-lg" type="button" name="button">Go</button>
                     </div>
-                    <div class="row">
-                        <img class="socialicon" src="images/icon-facebook.svg" alt="">
-                        <img class="socialicon" src="images/icon-youtube.svg" alt="">
-                        <img class="socialicon" src="images/icon-twitter.svg" alt="">
-                        <img class="socialicon" src="images/icon-pinterest.svg" alt="">
-                        <img class="socialicon" src="images/icon-instagram.svg" alt="">
-                    </div>
+                    <div class="row icon-row">
+                        <i class="fab bottom-icon fa-facebook fa-2x "></i>
+                        <i class="fab bottom-icon fa-twitter fa-2x "></i>
+                        <i class="fab bottom-icon fa-pinterest fa-2x "></i>
+                        <i class="fab bottom-icon fa-youtube fa-2x "></i>
+                        <i class="fab bottom-icon fa-instagram fa-2x "></i> </div>
                 </div>
             </div>
         </div>
