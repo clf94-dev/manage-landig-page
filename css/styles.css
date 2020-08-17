@@ -168,9 +168,16 @@ nav {
 }
 
 h1 {
+  margin-top: 15%;
   padding: 5% 10% 5% 0;
   font-weight: 700;
   font-family: "Be Vietnam", sans-serif;
+}
+
+@media screen and (max-width: 789px) {
+  .top-row {
+    flex-flow: column-reverse;
+  }
 }
 
 #features {
@@ -295,17 +302,20 @@ h5 {
 }
 
 #footer {
-  text-align: center;
+  padding: 3% 7%;
+  background-color: #1d1e25;
 }
 
 #footer .contsocial {
-  z-index: 2;
-  background-color: #1d1e25;
   padding: 60px 20px;
 }
 
 #footer .contsocial .text-font {
   font-family: "Be Vietnam", sans-serif;
+}
+
+#footer .contsocial .links-footer {
+  text-align: center;
 }
 
 #footer .contsocial .icon-row {
@@ -349,7 +359,10 @@ h5 {
 }
 
 @media screen and (max-width: 768px) {
-  #footer .contsocial .calltoaction-color .contsocial {
+  #footer .contsocial {
     text-align: center;
+  }
+  #footer .contsocial .row .logo-col {
+    justify-content: center;
   }
 }
